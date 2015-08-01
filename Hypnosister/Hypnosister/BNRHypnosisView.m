@@ -16,28 +16,19 @@
     CGContextSetShadow(currentContext, CGSizeMake(4, 7), 3);
     
     CGRect bounds = self.bounds;
-    CGPoint center;
-    center.x=bounds.origin.x+bounds.size.width/2.0;
-    center.y=bounds.origin.y+bounds.size.height/2.0;
-
-    float maxRadius=hypotf(bounds.size.width, bounds.size.height)/2.0;
-    UIBezierPath *path=[[UIBezierPath alloc] init];
-
-    for (float currentRadius=maxRadius; currentRadius>0; currentRadius-=20) {
-        [path moveToPoint:CGPointMake(center.x + currentRadius, center.y)];//移动笔的位置
-        [path addArcWithCenter:center
-                        radius:currentRadius
-                    startAngle:0.0
-                      endAngle:M_PI*2.0
-                     clockwise:YES];
-    }
-    path.lineWidth=10;
-    [[UIColor lightGrayColor] setStroke];
-    [path stroke];
     
-    UIImage *logoImage = [UIImage imageNamed:@"logo.png"];
-    CGRect paintImage = CGRectMake(bounds.origin.x+50, bounds.origin.y+100, bounds.size.width-100, bounds.size.height-200);
-    [logoImage drawInRect:paintImage];
+    CGFloat location[2]={0.0,1.0};
+    CGFloat components[8]={1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 1.0};
+    
+    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
+    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorspace, components, location, 2);
+    
+    CGPoint startPoint=CGPointMake(bounds.origin.x, bounds.origin.y);
+    CGPoint endPoint=CGPointMake(bounds.origin.x+bounds.size.width, bounds.origin.y+bounds.size.height);
+    
+    CGContextDrawLinearGradient(currentContext, gradient, startPoint, endPoint, 0);
+    CGGradientRelease(gradient);
+    CGColorSpaceRelease(colorspace);
     
 }
 
