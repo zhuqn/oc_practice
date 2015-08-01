@@ -11,6 +11,10 @@
 @implementation BNRHypnosisView
 - (void)drawRect:(CGRect)rect
 {
+    CGContextRef currentContext = UIGraphicsGetCurrentContext();
+    CGContextSaveGState(currentContext);
+    CGContextSetShadow(currentContext, CGSizeMake(4, 7), 3);
+    
     CGRect bounds = self.bounds;
     CGPoint center;
     center.x=bounds.origin.x+bounds.size.width/2.0;
@@ -34,6 +38,7 @@
     UIImage *logoImage = [UIImage imageNamed:@"logo.png"];
     CGRect paintImage = CGRectMake(bounds.origin.x+50, bounds.origin.y+100, bounds.size.width-100, bounds.size.height-200);
     [logoImage drawInRect:paintImage];
+    
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
