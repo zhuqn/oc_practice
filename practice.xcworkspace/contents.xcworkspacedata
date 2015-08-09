@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:BNRReminderViewController.xib">
+   </FileRef>
+   <FileRef
+      location = "group:HypnoNerd/HypnoNerd.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Hypnosister/Hypnosister.xcodeproj">
    </FileRef>
    <FileRef
