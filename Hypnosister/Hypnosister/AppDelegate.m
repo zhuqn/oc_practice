@@ -22,12 +22,30 @@
                    [[UIScreen mainScreen] bounds]];
     
 //    CGRect firstFrame = CGRectMake(160, 240, 100, 150);
-    CGRect firstFrame = self.window.bounds;
-    BNRHypnosisView *firstView = [[BNRHypnosisView alloc] initWithFrame:firstFrame];
-//    firstView.backgroundColor = [UIColor redColor];
+//    CGRect firstFrame = self.window.bounds;
+//    BNRHypnosisView *firstView = [[BNRHypnosisView alloc] initWithFrame:firstFrame];
+////    firstView.backgroundColor = [UIColor redColor];
+//    
+//    [self.window addSubview:firstView];
+    CGRect screenRect=self.window.bounds;
+    CGRect bigRect = screenRect;
+    bigRect.size.width*=2.0;
+//    bigRect.size.height*=2.0;
     
-    [self.window addSubview:firstView];
+    UIScrollView *scrollView=[[UIScrollView alloc] initWithFrame:screenRect];
+    [scrollView setPagingEnabled:YES];
+    [self.window addSubview:scrollView];
     
+//    BNRHypnosisView *hypnosisView=[[BNRHypnosisView alloc]
+//                                   initWithFrame:bigRect];
+    BNRHypnosisView *hypnosisView=[[BNRHypnosisView alloc] initWithFrame:screenRect];
+    [scrollView addSubview:hypnosisView];
+    
+    screenRect.origin.x+=screenRect.size.width;
+    BNRHypnosisView *anotherView=[[BNRHypnosisView alloc] initWithFrame:screenRect];
+    [scrollView addSubview:anotherView];
+    
+    scrollView.contentSize=bigRect.size;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window  makeKeyAndVisible];
