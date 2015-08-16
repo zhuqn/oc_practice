@@ -24,11 +24,13 @@
     
     BNRHypnosisController *hvc = [[BNRHypnosisController alloc] init];
     
-    NSBundle *appBundle = [NSBundle mainBundle];
-    
-    BNRReminderViewController *rvc = [[BNRReminderViewController alloc]
-                                      initWithNibName:@"BNRReminderViewController"
-                                      bundle:appBundle];
+//    NSBundle *appBundle = [NSBundle mainBundle];
+//    
+//    BNRReminderViewController *rvc = [[BNRReminderViewController alloc]
+//                                      initWithNibName:@"BNRReminderViewController"
+//                                      bundle:appBundle];
+    //init传入nil参数，但默认会查找加载同名的xib文件
+    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] init];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = @[hvc,rvc];
