@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  Random
+//  ResizeDemo
 //
-//  Created by zqn on 15/9/8.
+//  Created by zqn on 15/9/15.
 //  Copyright (c) 2015年 my.company. All rights reserved.
 //
 
@@ -23,6 +23,9 @@
     // Insert code here to tear down your application
 }
 
-- (IBAction)addList:(id)sender {
+- (NSSize)windowWillResize:(NSWindow *)sender toSize:(NSSize)frameSize{
+    NSSize mysize = NSMakeSize(frameSize.width, frameSize.width*2);
+    return mysize;
 }
+
 @end

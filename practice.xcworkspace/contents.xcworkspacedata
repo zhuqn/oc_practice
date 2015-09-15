@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TodoList/TodoList.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ResizeDemo/ResizeDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CountChar/CountChar.xcodeproj">
    </FileRef>
    <FileRef
