@@ -13,6 +13,7 @@
 		2F4EAA661BB37FD60027B67A /* RMDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4EAA641BB37FD60027B67A /* RMDocument.xib */; };
 		2F4EAA681BB37FD60027B67A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4EAA671BB37FD60027B67A /* Assets.xcassets */; };
 		2F4EAA6B1BB37FD60027B67A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4EAA691BB37FD60027B67A /* MainMenu.xib */; };
+		2F4EAA741BB3834F0027B67A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EAA731BB3834F0027B67A /* Person.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		2F4EAA671BB37FD60027B67A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F4EAA6A1BB37FD60027B67A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2F4EAA6C1BB37FD60027B67A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F4EAA721BB3834F0027B67A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		2F4EAA731BB3834F0027B67A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		2F4EAA5A1BB37FD60027B67A /* RaiseMan */ = {
 			isa = PBXGroup;
 			children = (
+				2F4EAA721BB3834F0027B67A /* Person.h */,
+				2F4EAA731BB3834F0027B67A /* Person.m */,
 				2F4EAA5B1BB37FD60027B67A /* RMAppDelegate.h */,
 				2F4EAA5C1BB37FD60027B67A /* RMAppDelegate.m */,
 				2F4EAA611BB37FD60027B67A /* RMDocument.h */,
@@ -151,6 +156,7 @@
 			files = (
 				2F4EAA631BB37FD60027B67A /* RMDocument.m in Sources */,
 				2F4EAA601BB37FD60027B67A /* main.m in Sources */,
+				2F4EAA741BB3834F0027B67A /* Person.m in Sources */,
 				2F4EAA5D1BB37FD60027B67A /* RMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
