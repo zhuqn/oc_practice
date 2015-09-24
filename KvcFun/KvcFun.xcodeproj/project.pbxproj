@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FF6A0341BB3074C00B21640 /* KvcFunAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF6A0331BB3074C00B21640 /* KvcFunAppDelegate.m */; };
+		2FF6A0371BB3074C00B21640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF6A0361BB3074C00B21640 /* main.m */; };
+		2FF6A0391BB3074D00B21640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF6A0381BB3074D00B21640 /* Assets.xcassets */; };
+		2FF6A03C1BB3074D00B21640 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF6A03A1BB3074D00B21640 /* MainMenu.xib */; };
+		2FF6A0471BB3074D00B21640 /* KvcFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF6A0461BB3074D00B21640 /* KvcFunTests.m */; };
+		2FF6A0521BB3074D00B21640 /* KvcFunUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF6A0511BB3074D00B21640 /* KvcFunUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FF6A0431BB3074D00B21640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FF6A0271BB3074C00B21640 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FF6A02E1BB3074C00B21640;
+			remoteInfo = KvcFun;
+		};
+		2FF6A04E1BB3074D00B21640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FF6A0271BB3074C00B21640 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FF6A02E1BB3074C00B21640;
+			remoteInfo = KvcFun;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FF6A02F1BB3074C00B21640 /* KvcFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KvcFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF6A0321BB3074C00B21640 /* KvcFunAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KvcFunAppDelegate.h; sourceTree = "<group>"; };
+		2FF6A0331BB3074C00B21640 /* KvcFunAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KvcFunAppDelegate.m; sourceTree = "<group>"; };
+		2FF6A0361BB3074C00B21640 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2FF6A0381BB3074D00B21640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FF6A03B1BB3074D00B21640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2FF6A03D1BB3074D00B21640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FF6A0421BB3074D00B21640 /* KvcFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KvcFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF6A0461BB3074D00B21640 /* KvcFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KvcFunTests.m; sourceTree = "<group>"; };
+		2FF6A0481BB3074D00B21640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FF6A04D1BB3074D00B21640 /* KvcFunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KvcFunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF6A0511BB3074D00B21640 /* KvcFunUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KvcFunUITests.m; sourceTree = "<group>"; };
+		2FF6A0531BB3074D00B21640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FF6A02C1BB3074C00B21640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FF6A03F1BB3074D00B21640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FF6A04A1BB3074D00B21640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FF6A0261BB3074C00B21640 = {
+			isa = PBXGroup;
+			children = (
+				2FF6A0311BB3074C00B21640 /* KvcFun */,
+				2FF6A0451BB3074D00B21640 /* KvcFunTests */,
+				2FF6A0501BB3074D00B21640 /* KvcFunUITests */,
+				2FF6A0301BB3074C00B21640 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FF6A0301BB3074C00B21640 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FF6A02F1BB3074C00B21640 /* KvcFun.app */,
+				2FF6A0421BB3074D00B21640 /* KvcFunTests.xctest */,
+				2FF6A04D1BB3074D00B21640 /* KvcFunUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FF6A0311BB3074C00B21640 /* KvcFun */ = {
+			isa = PBXGroup;
+			children = (
+				2FF6A0321BB3074C00B21640 /* KvcFunAppDelegate.h */,
+				2FF6A0331BB3074C00B21640 /* KvcFunAppDelegate.m */,
+				2FF6A0381BB3074D00B21640 /* Assets.xcassets */,
+				2FF6A03A1BB3074D00B21640 /* MainMenu.xib */,
+				2FF6A03D1BB3074D00B21640 /* Info.plist */,
+				2FF6A0351BB3074C00B21640 /* Supporting Files */,
+			);
+			path = KvcFun;
+			sourceTree = "<group>";
+		};
+		2FF6A0351BB3074C00B21640 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FF6A0361BB3074C00B21640 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FF6A0451BB3074D00B21640 /* KvcFunTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FF6A0461BB3074D00B21640 /* KvcFunTests.m */,
+				2FF6A0481BB3074D00B21640 /* Info.plist */,
+			);
+			path = KvcFunTests;
+			sourceTree = "<group>";
+		};
+		2FF6A0501BB3074D00B21640 /* KvcFunUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2FF6A0511BB3074D00B21640 /* KvcFunUITests.m */,
+				2FF6A0531BB3074D00B21640 /* Info.plist */,
+			);
+			path = KvcFunUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FF6A02E1BB3074C00B21640 /* KvcFun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FF6A0561BB3074D00B21640 /* Build configuration list for PBXNativeTarget "KvcFun" */;
+			buildPhases = (
+				2FF6A02B1BB3074C00B21640 /* Sources */,
+				2FF6A02C1BB3074C00B21640 /* Frameworks */,
+				2FF6A02D1BB3074C00B21640 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KvcFun;
+			productName = KvcFun;
+			productReference = 2FF6A02F1BB3074C00B21640 /* KvcFun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FF6A0411BB3074D00B21640 /* KvcFunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FF6A0591BB3074D00B21640 /* Build configuration list for PBXNativeTarget "KvcFunTests" */;
+			buildPhases = (
+				2FF6A03E1BB3074D00B21640 /* Sources */,
+				2FF6A03F1BB3074D00B21640 /* Frameworks */,
+				2FF6A0401BB3074D00B21640 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FF6A0441BB3074D00B21640 /* PBXTargetDependency */,
+			);
+			name = KvcFunTests;
+			productName = KvcFunTests;
+			productReference = 2FF6A0421BB3074D00B21640 /* KvcFunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2FF6A04C1BB3074D00B21640 /* KvcFunUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FF6A05C1BB3074D00B21640 /* Build configuration list for PBXNativeTarget "KvcFunUITests" */;
+			buildPhases = (
+				2FF6A0491BB3074D00B21640 /* Sources */,
+				2FF6A04A1BB3074D00B21640 /* Frameworks */,
+				2FF6A04B1BB3074D00B21640 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FF6A04F1BB3074D00B21640 /* PBXTargetDependency */,
+			);
+			name = KvcFunUITests;
+			productName = KvcFunUITests;
+			productReference = 2FF6A04D1BB3074D00B21640 /* KvcFunUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FF6A0271BB3074C00B21640 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = my.company;
+				TargetAttributes = {
+					2FF6A02E1BB3074C00B21640 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					2FF6A0411BB3074D00B21640 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 2FF6A02E1BB3074C00B21640;
+					};
+					2FF6A04C1BB3074D00B21640 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 2FF6A02E1BB3074C00B21640;
+					};
+				};
+			};
+			buildConfigurationList = 2FF6A02A1BB3074C00B21640 /* Build configuration list for PBXProject "KvcFun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FF6A0261BB3074C00B21640;
+			productRefGroup = 2FF6A0301BB3074C00B21640 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FF6A02E1BB3074C00B21640 /* KvcFun */,
+				2FF6A0411BB3074D00B21640 /* KvcFunTests */,
+				2FF6A04C1BB3074D00B21640 /* KvcFunUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FF6A02D1BB3074C00B21640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF6A0391BB3074D00B21640 /* Assets.xcassets in Resources */,
+				2FF6A03C1BB3074D00B21640 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FF6A0401BB3074D00B21640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FF6A04B1BB3074D00B21640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FF6A02B1BB3074C00B21640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF6A0371BB3074C00B21640 /* main.m in Sources */,
+				2FF6A0341BB3074C00B21640 /* KvcFunAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FF6A03E1BB3074D00B21640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF6A0471BB3074D00B21640 /* KvcFunTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FF6A0491BB3074D00B21640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF6A0521BB3074D00B21640 /* KvcFunUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FF6A0441BB3074D00B21640 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FF6A02E1BB3074C00B21640 /* KvcFun */;
+			targetProxy = 2FF6A0431BB3074D00B21640 /* PBXContainerItemProxy */;
+		};
+		2FF6A04F1BB3074D00B21640 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FF6A02E1BB3074C00B21640 /* KvcFun */;
+			targetProxy = 2FF6A04E1BB3074D00B21640 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2FF6A03A1BB3074D00B21640 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FF6A03B1BB3074D00B21640 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FF6A0541BB3074D00B21640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2FF6A0551BB3074D00B21640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2FF6A0571BB3074D00B21640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KvcFun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = youku.KvcFun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2FF6A0581BB3074D00B21640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KvcFun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = youku.KvcFun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2FF6A05A1BB3074D00B21640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KvcFunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = youku.KvcFunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KvcFun.app/Contents/MacOS/KvcFun";
+			};
+			name = Debug;
+		};
+		2FF6A05B1BB3074D00B21640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KvcFunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = youku.KvcFunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KvcFun.app/Contents/MacOS/KvcFun";
+			};
+			name = Release;
+		};
+		2FF6A05D1BB3074D00B21640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KvcFunUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = youku.KvcFunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KvcFun;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2FF6A05E1BB3074D00B21640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KvcFunUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = youku.KvcFunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KvcFun;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FF6A02A1BB3074C00B21640 /* Build configuration list for PBXProject "KvcFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF6A0541BB3074D00B21640 /* Debug */,
+				2FF6A0551BB3074D00B21640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FF6A0561BB3074D00B21640 /* Build configuration list for PBXNativeTarget "KvcFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF6A0571BB3074D00B21640 /* Debug */,
+				2FF6A0581BB3074D00B21640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2FF6A0591BB3074D00B21640 /* Build configuration list for PBXNativeTarget "KvcFunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF6A05A1BB3074D00B21640 /* Debug */,
+				2FF6A05B1BB3074D00B21640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2FF6A05C1BB3074D00B21640 /* Build configuration list for PBXNativeTarget "KvcFunUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF6A05D1BB3074D00B21640 /* Debug */,
+				2FF6A05E1BB3074D00B21640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FF6A0271BB3074C00B21640 /* Project object */;
+}
