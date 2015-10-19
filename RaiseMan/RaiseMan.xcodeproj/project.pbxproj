@@ -110,6 +110,7 @@
 		2F4EAA501BB37FD60027B67A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RM;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = my.company;
 				TargetAttributes = {
@@ -305,6 +306,7 @@
 				2F4EAA711BB37FD60027B67A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
