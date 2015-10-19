@@ -79,9 +79,9 @@
 		2F6DC9FB1B9E59A3004B0335 /* Random */ = {
 			isa = PBXGroup;
 			children = (
-				2F6DC9FE1B9E59A3004B0335 /* AppDelegate.h */,
 				2F6DCA1C1B9E5D2D004B0335 /* RandomController.h */,
 				2F6DCA1D1B9E5D2D004B0335 /* RandomController.m */,
+				2F6DC9FE1B9E59A3004B0335 /* AppDelegate.h */,
 				2F6DC9FF1B9E59A3004B0335 /* AppDelegate.m */,
 				2F6DCA031B9E59A3004B0335 /* Images.xcassets */,
 				2F6DCA051B9E59A3004B0335 /* MainMenu.xib */,
@@ -407,6 +407,7 @@
 				2F6DCA181B9E59A3004B0335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F6DCA191B9E59A3004B0335 /* Build configuration list for PBXNativeTarget "RandomTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +416,7 @@
 				2F6DCA1B1B9E59A3004B0335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

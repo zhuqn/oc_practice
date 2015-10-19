@@ -28,4 +28,6 @@
     return mysize;
 }
 
+- (IBAction)Delete:(id)sender {
+}
 @end

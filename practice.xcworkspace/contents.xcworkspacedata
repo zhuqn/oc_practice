@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:RaiseManNoArrayController/RaiseManNoArrayController.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:RaiseMan/RaiseMan.xcodeproj">
    </FileRef>
    <FileRef
