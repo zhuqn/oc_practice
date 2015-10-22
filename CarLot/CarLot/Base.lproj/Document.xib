@@ -26,7 +26,7 @@
                     <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I02-4T-hoT">
                         <rect key="frame" x="20" y="303" width="629" height="209"/>
                         <clipView key="contentView" ambiguous="YES" id="CTr-bR-pLM">
-                            <rect key="frame" x="1" y="23" width="627" height="185"/>
+                            <rect key="frame" x="1" y="0.0" width="627" height="208"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="gcA-xC-nwI" viewBased="YES" id="Z2z-jl-h8k">
@@ -59,7 +59,7 @@
                                                             <animations/>
                                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" id="2zj-nx-APq"/>
                                                             <connections>
-                                                                <binding destination="7HP-wg-dPC" name="value" keyPath="objectValue.photo" id="uvB-fi-38b"/>
+                                                                <binding destination="7HP-wg-dPC" name="value" keyPath="objectValue.photo" id="AbU-P1-lBs"/>
                                                             </connections>
                                                         </imageView>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aqC-6m-sAy">
@@ -72,7 +72,7 @@
                                                             </textFieldCell>
                                                             <connections>
                                                                 <binding destination="7HP-wg-dPC" name="font" keyPath="objectValue.onSpecial" id="J7x-ok-nTt"/>
-                                                                <binding destination="7HP-wg-dPC" name="value" keyPath="objectValue.makeModel" id="Dg5-QN-dz5"/>
+                                                                <binding destination="7HP-wg-dPC" name="value" keyPath="objectValue.makeModel" id="hU3-Y1-zLb"/>
                                                             </connections>
                                                         </textField>
                                                     </subviews>
@@ -81,11 +81,6 @@
                                                         <outlet property="imageView" destination="1pP-4e-j5e" id="c91-M4-pTS"/>
                                                         <outlet property="textField" destination="aqC-6m-sAy" id="clH-LH-BTB"/>
                                                     </connections>
-                                                </tableCellView>
-                                                <tableCellView id="kwd-tD-tE0">
-                                                    <rect key="frame" x="1" y="20" width="192" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <animations/>
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
@@ -110,7 +105,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
                                                             <animations/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Lvm-II-GF8">
-                                                                <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="currency" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" minimumFractionDigits="2" maximumFractionDigits="2" id="qVU-DD-ehv"/>
+                                                                <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="currency" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" minimumFractionDigits="2" maximumFractionDigits="2" id="5eW-JB-2kI"/>
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -172,11 +167,11 @@
                         </clipView>
                         <animations/>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="UGL-gt-I2Q">
-                            <rect key="frame" x="1" y="192" width="627" height="16"/>
+                            <rect key="frame" x="1" y="7" width="0.0" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <animations/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="bVd-gM-k13">
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="bVd-gM-k13">
                             <rect key="frame" x="224" y="17" width="15" height="102"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <animations/>
@@ -195,7 +190,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="remove:" target="Kvq-30-SQw" id="0QN-Ij-kuW"/>
+                            <action selector="remove:" target="Kvq-30-SQw" id="v2q-aG-jTR"/>
                             <binding destination="Kvq-30-SQw" name="enabled" keyPath="canRemove" id="gj4-wJ-xz0"/>
                         </connections>
                     </button>
@@ -207,7 +202,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="add:" target="Kvq-30-SQw" id="lww-BZ-C7U"/>
+                            <action selector="add:" target="Kvq-30-SQw" id="18K-pC-7WV"/>
                         </connections>
                     </button>
                     <box autoresizesSubviews="NO" fixedFrame="YES" title="Box" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="eWJ-SP-eLz">
@@ -239,7 +234,7 @@
                                     <animations/>
                                     <levelIndicatorCell key="cell" editable="YES" alignment="left" doubleValue="2" maxValue="5" warningValue="2" criticalValue="2" levelIndicatorStyle="rating" id="kWL-jR-OLi"/>
                                     <connections>
-                                        <binding destination="Kvq-30-SQw" name="value" keyPath="selection" id="cgl-z5-MUK"/>
+                                        <binding destination="Kvq-30-SQw" name="value" keyPath="selection.condition" id="hFP-Mg-GEq"/>
                                     </connections>
                                 </levelIndicator>
                                 <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XdD-aY-j4j">
@@ -294,7 +289,7 @@
             </connections>
             <point key="canvasLocation" x="564.5" y="282"/>
         </window>
-        <arrayController mode="entity" entityName="Car" automaticallyPreparesContent="YES" id="Kvq-30-SQw" userLabel="Car">
+        <arrayController mode="entity" entityName="Car" automaticallyPreparesContent="YES" id="Kvq-30-SQw" userLabel="Cars">
             <connections>
                 <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="wOs-Yn-OqD"/>
             </connections>
