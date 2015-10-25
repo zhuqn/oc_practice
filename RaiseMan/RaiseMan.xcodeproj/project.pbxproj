@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1014E61BDCFBAC0017A43E /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1014E51BDCFBAC0017A43E /* PreferenceController.m */; settings = {ASSET_TAGS = (); }; };
+		2F1014E91BDD00120017A43E /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1014E81BDD00120017A43E /* AppController.m */; settings = {ASSET_TAGS = (); }; };
+		2F1014EB1BDD0EB70017A43E /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1014EA1BDD0EB70017A43E /* Preferences.xib */; settings = {ASSET_TAGS = (); }; };
+		2F1014EE1BDD28E80017A43E /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1014ED1BDD28E80017A43E /* AboutController.m */; settings = {ASSET_TAGS = (); }; };
+		2F1014F01BDD290D0017A43E /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1014EF1BDD290D0017A43E /* About.xib */; settings = {ASSET_TAGS = (); }; };
 		2F20C46F1BD68DA200A40BC6 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2F20C46E1BD68DA200A40BC6 /* AppIcon.icns */; settings = {ASSET_TAGS = (); }; };
 		2F4EAA5D1BB37FD60027B67A /* RMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EAA5C1BB37FD60027B67A /* RMAppDelegate.m */; };
 		2F4EAA601BB37FD60027B67A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EAA5F1BB37FD60027B67A /* main.m */; };
@@ -18,6 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F1014E41BDCFBAC0017A43E /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		2F1014E51BDCFBAC0017A43E /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
+		2F1014E71BDD00120017A43E /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		2F1014E81BDD00120017A43E /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		2F1014EA1BDD0EB70017A43E /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		2F1014EC1BDD28E80017A43E /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
+		2F1014ED1BDD28E80017A43E /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
+		2F1014EF1BDD290D0017A43E /* About.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
 		2F20C46E1BD68DA200A40BC6 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
 		2F4EAA581BB37FD60027B67A /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4EAA5B1BB37FD60027B67A /* RMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMAppDelegate.h; sourceTree = "<group>"; };
@@ -69,9 +82,17 @@
 				2F4EAA5C1BB37FD60027B67A /* RMAppDelegate.m */,
 				2F4EAA611BB37FD60027B67A /* RMDocument.h */,
 				2F4EAA621BB37FD60027B67A /* RMDocument.m */,
-				2F4EAA641BB37FD60027B67A /* RMDocument.xib */,
+				2F1014E41BDCFBAC0017A43E /* PreferenceController.h */,
+				2F1014E51BDCFBAC0017A43E /* PreferenceController.m */,
+				2F1014EC1BDD28E80017A43E /* AboutController.h */,
+				2F1014ED1BDD28E80017A43E /* AboutController.m */,
+				2F1014E71BDD00120017A43E /* AppController.h */,
+				2F1014E81BDD00120017A43E /* AppController.m */,
 				2F4EAA671BB37FD60027B67A /* Assets.xcassets */,
+				2F4EAA641BB37FD60027B67A /* RMDocument.xib */,
 				2F4EAA691BB37FD60027B67A /* MainMenu.xib */,
+				2F1014EA1BDD0EB70017A43E /* Preferences.xib */,
+				2F1014EF1BDD290D0017A43E /* About.xib */,
 				2F4EAA6C1BB37FD60027B67A /* Info.plist */,
 				2F4EAA5E1BB37FD60027B67A /* Supporting Files */,
 			);
@@ -148,7 +169,9 @@
 				2F4EAA681BB37FD60027B67A /* Assets.xcassets in Resources */,
 				2F20C46F1BD68DA200A40BC6 /* AppIcon.icns in Resources */,
 				2F4EAA661BB37FD60027B67A /* RMDocument.xib in Resources */,
+				2F1014F01BDD290D0017A43E /* About.xib in Resources */,
 				2F4EAA6B1BB37FD60027B67A /* MainMenu.xib in Resources */,
+				2F1014EB1BDD0EB70017A43E /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,9 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F4EAA631BB37FD60027B67A /* RMDocument.m in Sources */,
+				2F1014E91BDD00120017A43E /* AppController.m in Sources */,
 				2F4EAA601BB37FD60027B67A /* main.m in Sources */,
+				2F1014E61BDCFBAC0017A43E /* PreferenceController.m in Sources */,
 				2F4EAA741BB3834F0027B67A /* Person.m in Sources */,
 				2F4EAA5D1BB37FD60027B67A /* RMAppDelegate.m in Sources */,
+				2F1014EE1BDD28E80017A43E /* AboutController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
