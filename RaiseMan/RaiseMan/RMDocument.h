@@ -16,6 +16,7 @@
     IBOutlet NSArrayController *employeeController;
 }
 - (IBAction)creatEmployee:(id)sender;
+- (IBAction)removeEmployee:(id)sender;
 
 - (void)setEmployees:(NSMutableArray *)a;
 

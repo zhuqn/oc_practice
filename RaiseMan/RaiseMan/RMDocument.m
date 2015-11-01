@@ -97,6 +97,30 @@ static void *RMDocumentKVOContext;
                    select:YES];
 }
 
+- (IBAction)removeEmployee:(id)sender
+{
+    NSArray *selectedPeople = [employeeController selectedObjects];
+    NSAlert *alert = [NSAlert alertWithMessageText:@"Do you really want to remove these people?"
+                                     defaultButton:@"Remove"
+                                   alternateButton:@"Cancel"
+                                       otherButton:nil
+                         informativeTextWithFormat:@"%d people will be removed.",[selectedPeople count]];
+    
+    NSLog(@"Starting alert sheet");
+    [alert beginSheetModalForWindow:[tableView window]
+                      modalDelegate:self
+                     didEndSelector:@selector(alertEnded:code:context:)
+                        contextInfo:(__bridge void * _Nullable)(selectedPeople)];
+}
+
+- (void)alertEnded:(NSAlert *)alert code:(NSInteger)choice context:(void *)v
+{
+    NSLog(@"Alert sheet ended");
+    if (choice == NSAlertDefaultReturn) {
+        [employeeController removeObjects:(__bridge NSArray *)v];
+    }
+}
+
 - (void)setEmployees:(NSMutableArray *)a{
     for (Person *person in employees) {
         [self stopObservingPerson:person];
