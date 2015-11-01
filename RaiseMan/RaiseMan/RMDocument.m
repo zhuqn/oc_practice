@@ -103,7 +103,7 @@ static void *RMDocumentKVOContext;
     NSAlert *alert = [NSAlert alertWithMessageText:@"Do you really want to remove these people?"
                                      defaultButton:@"Remove"
                                    alternateButton:@"Cancel"
-                                       otherButton:nil
+                                       otherButton:@"Keep, but no raise"
                          informativeTextWithFormat:@"%d people will be removed.",[selectedPeople count]];
     
     NSLog(@"Starting alert sheet");
@@ -116,8 +116,17 @@ static void *RMDocumentKVOContext;
 - (void)alertEnded:(NSAlert *)alert code:(NSInteger)choice context:(void *)v
 {
     NSLog(@"Alert sheet ended");
+    NSArray *array = (__bridge NSArray *)v;
     if (choice == NSAlertDefaultReturn) {
-        [employeeController removeObjects:(__bridge NSArray *)v];
+        [employeeController removeObjects:array];
+    }
+    else if (choice == NSAlertOtherReturn)
+    {
+        NSLog(@"%@",employeeController);
+        for (Person *person in employeeController.arrangedObjects) {
+            [person setExpectedRaise:0.0];
+        }
+
     }
 }
 
