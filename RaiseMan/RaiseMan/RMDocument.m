@@ -44,8 +44,28 @@ static void *RMDocumentKVOContext;
     self = [super init];
     if (self) {
         employees = [[NSMutableArray alloc]init];
+        
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        [nc addObserver:self
+               selector:@selector(handleColorChange:)
+                   name:BNRColorChangedNotification
+                 object:nil];
+        NSLog(@"Registered with notification center");
+        
     }
     return self;
+}
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+-(void)handleColorChange:(NSNotification *)note
+{
+    NSLog(@"Received notification: %@",note);
+    NSColor *color = [[note userInfo]objectForKey:@"color"];
+    [tableView setBackgroundColor:color];
 }
 
 - (IBAction)creatEmployee:(id)sender {

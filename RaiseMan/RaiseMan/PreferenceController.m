@@ -10,6 +10,7 @@
 
 NSString * const BNRTableBgColorKey = @"BNRTableBackgroundColor";
 NSString * const BNREmptyDocKey = @"BNREmptyDocumentFlag";
+NSString * const BNRColorChangedNotification = @"BNRColorChanged";
 
 @interface PreferenceController ()
 
@@ -37,6 +38,14 @@ NSString * const BNREmptyDocKey = @"BNREmptyDocumentFlag";
     NSColor *color = [colorWell color];
     [PreferenceController setPreferenceTableBgColor:color];
     NSLog(@"Color changed:%@",color);
+    
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    NSLog(@"Sending notification");
+    
+    NSDictionary *d = [NSDictionary dictionaryWithObject:color forKey:@"color"];
+    
+//    [nc postNotificationName:BNRColorChangedNotification object:self];
+    [nc postNotificationName:BNRColorChangedNotification object:self userInfo:d];
 }
 
 -(IBAction)changeNewEmptyDoc:(id)sender
