@@ -11,12 +11,7 @@
 @implementation StretchView
 
 
--(instancetype)init{
-    self = [super init];
-    return self;
-}
-
-- (id)initWithFrame:(NSRect)frameRect
+- (instancetype)initWithFrame:(NSRect)frameRect
 {
     self = [super initWithFrame:frameRect];
     if (self) {
@@ -44,6 +39,7 @@
     
     [[NSColor whiteColor]set];
     [path stroke];
+//    [path fill];
 }
 
 - (NSPoint)randomPoint

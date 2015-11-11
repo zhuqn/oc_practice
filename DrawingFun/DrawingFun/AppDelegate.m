@@ -175,4 +175,10 @@
     return NSTerminateNow;
 }
 
+- (IBAction)AddView:(id)sender
+{
+    NSRect rect = [self.window.contentView bounds];
+    [self.mainView addSubview:[[StretchView alloc] initWithFrame:rect]];
+}
+
 @end
