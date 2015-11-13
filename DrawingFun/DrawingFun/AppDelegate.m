@@ -178,6 +178,8 @@
 - (IBAction)AddView:(id)sender
 {
     NSRect rect = [self.window.contentView bounds];
+//    [self.window.contentView addSubview:[[StretchView alloc] initWithFrame:rect]];
+    
     [self.mainView addSubview:[[StretchView alloc] initWithFrame:rect]];
 }
 
