@@ -53,4 +53,21 @@
     result.y = r.origin.y + random()%(int)r.size.height;
     return result;
 }
+
+-(void)mouseDown:(NSEvent *)theEvent
+{
+    NSLog(@"mouseDown %ld", [theEvent clickCount]);
+}
+
+-(void)mouseDragged:(NSEvent *)theEvent
+{
+    NSPoint p = [theEvent locationInWindow];
+    NSLog(@"mouseDragged:%@",NSStringFromPoint(p));
+}
+
+-(void)mouseUp:(NSEvent *)theEvent
+{
+    NSLog(@"mouseUp:");
+}
+
 @end
