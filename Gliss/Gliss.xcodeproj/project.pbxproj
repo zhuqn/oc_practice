@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F495C901C90694700E7C1DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F495C8F1C90694700E7C1DB /* AppDelegate.m */; };
+		2F495C931C90694700E7C1DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F495C921C90694700E7C1DB /* main.m */; };
+		2F495C951C90694700E7C1DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F495C941C90694700E7C1DB /* Assets.xcassets */; };
+		2F495C981C90694700E7C1DB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F495C961C90694700E7C1DB /* MainMenu.xib */; };
+		2F495CA01C9069E800E7C1DB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F495C9F1C9069E800E7C1DB /* OpenGL.framework */; };
+		2F495CA21C9069F500E7C1DB /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F495CA11C9069F500E7C1DB /* GLUT.framework */; };
+		2F495CA61C906A7100E7C1DB /* GlissView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F495CA51C906A7100E7C1DB /* GlissView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F495C8B1C90694700E7C1DB /* Gliss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gliss.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F495C8E1C90694700E7C1DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F495C8F1C90694700E7C1DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F495C921C90694700E7C1DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F495C941C90694700E7C1DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F495C971C90694700E7C1DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2F495C991C90694700E7C1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F495C9F1C9069E800E7C1DB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		2F495CA11C9069F500E7C1DB /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		2F495CA41C906A7100E7C1DB /* GlissView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlissView.h; sourceTree = "<group>"; };
+		2F495CA51C906A7100E7C1DB /* GlissView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlissView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F495C881C90694700E7C1DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F495CA21C9069F500E7C1DB /* GLUT.framework in Frameworks */,
+				2F495CA01C9069E800E7C1DB /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F495C821C90694700E7C1DB = {
+			isa = PBXGroup;
+			children = (
+				2F495CA31C906A0200E7C1DB /* Framework */,
+				2F495C8D1C90694700E7C1DB /* Gliss */,
+				2F495C8C1C90694700E7C1DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F495C8C1C90694700E7C1DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F495C8B1C90694700E7C1DB /* Gliss.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F495C8D1C90694700E7C1DB /* Gliss */ = {
+			isa = PBXGroup;
+			children = (
+				2F495C8E1C90694700E7C1DB /* AppDelegate.h */,
+				2F495C8F1C90694700E7C1DB /* AppDelegate.m */,
+				2F495C941C90694700E7C1DB /* Assets.xcassets */,
+				2F495C961C90694700E7C1DB /* MainMenu.xib */,
+				2F495C991C90694700E7C1DB /* Info.plist */,
+				2F495C911C90694700E7C1DB /* Supporting Files */,
+				2F495CA41C906A7100E7C1DB /* GlissView.h */,
+				2F495CA51C906A7100E7C1DB /* GlissView.m */,
+			);
+			path = Gliss;
+			sourceTree = "<group>";
+		};
+		2F495C911C90694700E7C1DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F495C921C90694700E7C1DB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F495CA31C906A0200E7C1DB /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				2F495CA11C9069F500E7C1DB /* GLUT.framework */,
+				2F495C9F1C9069E800E7C1DB /* OpenGL.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F495C8A1C90694700E7C1DB /* Gliss */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F495C9C1C90694700E7C1DB /* Build configuration list for PBXNativeTarget "Gliss" */;
+			buildPhases = (
+				2F495C871C90694700E7C1DB /* Sources */,
+				2F495C881C90694700E7C1DB /* Frameworks */,
+				2F495C891C90694700E7C1DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gliss;
+			productName = Gliss;
+			productReference = 2F495C8B1C90694700E7C1DB /* Gliss.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F495C831C90694700E7C1DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = my.company;
+				TargetAttributes = {
+					2F495C8A1C90694700E7C1DB = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 2F495C861C90694700E7C1DB /* Build configuration list for PBXProject "Gliss" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F495C821C90694700E7C1DB;
+			productRefGroup = 2F495C8C1C90694700E7C1DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F495C8A1C90694700E7C1DB /* Gliss */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F495C891C90694700E7C1DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F495C951C90694700E7C1DB /* Assets.xcassets in Resources */,
+				2F495C981C90694700E7C1DB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F495C871C90694700E7C1DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F495C931C90694700E7C1DB /* main.m in Sources */,
+				2F495CA61C906A7100E7C1DB /* GlissView.m in Sources */,
+				2F495C901C90694700E7C1DB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F495C961C90694700E7C1DB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F495C971C90694700E7C1DB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F495C9A1C90694700E7C1DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2F495C9B1C90694700E7C1DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2F495C9D1C90694700E7C1DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Gliss/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = youku.Gliss;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2F495C9E1C90694700E7C1DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Gliss/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = youku.Gliss;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F495C861C90694700E7C1DB /* Build configuration list for PBXProject "Gliss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F495C9A1C90694700E7C1DB /* Debug */,
+				2F495C9B1C90694700E7C1DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F495C9C1C90694700E7C1DB /* Build configuration list for PBXNativeTarget "Gliss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F495C9D1C90694700E7C1DB /* Debug */,
+				2F495C9E1C90694700E7C1DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F495C831C90694700E7C1DB /* Project object */;
+}

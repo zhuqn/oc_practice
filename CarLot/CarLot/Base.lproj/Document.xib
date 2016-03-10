@@ -71,8 +71,8 @@
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <connections>
-                                                                <binding destination="7HP-wg-dPC" name="font" keyPath="objectValue.onSpecial" id="J7x-ok-nTt"/>
                                                                 <binding destination="7HP-wg-dPC" name="value" keyPath="objectValue.makeModel" id="hU3-Y1-zLb"/>
+                                                                <binding destination="7HP-wg-dPC" name="font" keyPath="objectValue.onSpecial" id="J7x-ok-nTt"/>
                                                             </connections>
                                                         </textField>
                                                     </subviews>
