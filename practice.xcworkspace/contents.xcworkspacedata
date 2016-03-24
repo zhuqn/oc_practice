@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Scattered/Scattered.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Gliss/Gliss.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CarLot/CarLot.xcodeproj">
    </FileRef>
    <FileRef
