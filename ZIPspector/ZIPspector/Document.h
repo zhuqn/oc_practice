@@ -8,7 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface Document : NSDocument
+@interface Document : NSDocument<NSTableViewDataSource>
+{
+    IBOutlet NSTableView *tableView;
+    NSArray *filenames;
+}
 
 
 @end

@@ -39,12 +39,66 @@
     return nil;
 }
 
-- (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError {
-    // Insert code here to read your document from the given data of the specified type. If outError != NULL, ensure that you create and set an appropriate error when returning NO.
-    // You can also choose to override -readFromFileWrapper:ofType:error: or -readFromURL:ofType:error: instead.
-    // If you override either of these, you should also override -isEntireFileLoaded to return NO if the contents are lazily loaded.
-    [NSException raise:@"UnimplementedMethod" format:@"%@ is unimplemented", NSStringFromSelector(_cmd)];
+-(BOOL)readFromURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
+{
+    //工作的哪个文件
+    NSString *filename = [url path];
+    
+    //准备任务对象
+    NSTask *task = [[NSTask alloc] init];
+    [task setLaunchPath:@"/usr/bin/zipinfo"];
+    NSArray *args = [NSArray arrayWithObjects:@"-1",filename, nil];
+    [task setArguments:args];
+    
+    //创建读取的管道
+    NSPipe *outPipe = [[NSPipe alloc] init];
+    [task setStandardOutput:outPipe];
+    
+    //开始进程
+    [task launch];
+    
+    //读取输出
+    NSData *data = [[outPipe fileHandleForReading] readDataToEndOfFile];
+    
+    //确认任务正常中断
+    [task waitUntilExit];
+    int status = [task terminationStatus];
+    
+    //检查状态
+    if (status != 0) {
+        if (outError) {
+            NSDictionary *eDict = [NSDictionary dictionaryWithObject:@"zipinfo failed"
+                                                              forKey:NSLocalizedFailureReasonErrorKey];
+            *outError = [NSError errorWithDomain:NSOSStatusErrorDomain
+                                            code:0
+                                        userInfo:eDict];
+            return NO;
+        }
+    }
+    
+    //字符串转换
+    NSString *aString = [[NSString alloc] initWithData:data
+                                              encoding:NSUTF8StringEncoding];
+    
+    //字符串到行
+    filenames = [aString componentsSeparatedByString:@"\n"];
+    NSLog(@"filenames=%@",filenames);
+    
+    //处理翻转
+    [tableView reloadData];
+    
     return YES;
+}
+
+
+-(NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
+{
+    return [filenames count];
+}
+
+-(id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
+{
+    return [filenames objectAtIndex:row];
 }
 
 @end

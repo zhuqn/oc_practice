@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -686,16 +686,16 @@
                         <rect key="frame" x="322" y="20" width="108" height="254"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         <size key="cellSize" width="36" height="254"/>
-                        <sliderCell key="prototype" continuous="YES" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="5uH-Vn-in1"/>
+                        <sliderCell key="prototype" continuous="YES" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="below" sliderType="linear" id="5uH-Vn-in1"/>
                         <cells>
                             <column>
-                                <sliderCell continuous="YES" alignment="left" minValue="-4" maxValue="4" doubleValue="1" tickMarkPosition="right" sliderType="linear" id="SfA-wN-IGc"/>
+                                <sliderCell continuous="YES" alignment="left" minValue="-4" maxValue="4" doubleValue="1" tickMarkPosition="below" sliderType="linear" id="SfA-wN-IGc"/>
                             </column>
                             <column>
-                                <sliderCell continuous="YES" alignment="left" tag="1" minValue="-4" maxValue="4" tickMarkPosition="right" sliderType="linear" id="DH6-4u-gz4"/>
+                                <sliderCell continuous="YES" alignment="left" tag="1" minValue="-4" maxValue="4" tickMarkPosition="below" sliderType="linear" id="DH6-4u-gz4"/>
                             </column>
                             <column>
-                                <sliderCell continuous="YES" alignment="left" tag="2" minValue="0.29999999999999999" maxValue="5" doubleValue="4" tickMarkPosition="right" sliderType="linear" id="x8o-nl-3fs"/>
+                                <sliderCell continuous="YES" alignment="left" tag="2" minValue="0.29999999999999999" maxValue="5" doubleValue="4" tickMarkPosition="below" sliderType="linear" id="x8o-nl-3fs"/>
                             </column>
                         </cells>
                         <connections>

@@ -9,6 +9,17 @@
 #import <Cocoa/Cocoa.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+{
+    IBOutlet NSTextView *outputView;
+    IBOutlet NSTextField *hostField;
+    IBOutlet NSButton *startButton;
+    NSTask *task;
+    NSPipe *pipe;
+}
+@property (assign) IBOutlet NSWindow *window;
+
+- (IBAction)startStopPing:(id)sender;
+
 
 
 @end
