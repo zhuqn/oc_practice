@@ -8,6 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface BigLetterView : NSView
+@interface BigLetterView : NSView{
+    NSColor *bgColor;
+    NSString *string;
+    BOOL isHighlighted;
+}
+@property (strong)NSColor *bgColor;
+@property (copy)NSString *string;
 
 @end

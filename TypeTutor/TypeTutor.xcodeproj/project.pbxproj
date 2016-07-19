@@ -11,6 +11,7 @@
 		2FF2C0151D3D281600E447B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF2C0141D3D281600E447B1 /* main.m */; };
 		2FF2C0171D3D281600E447B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2C0161D3D281600E447B1 /* Assets.xcassets */; };
 		2FF2C01A1D3D281600E447B1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2C0181D3D281600E447B1 /* MainMenu.xib */; };
+		2FF2C0231D3D28B100E447B1 /* BigLetterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF2C0221D3D28B100E447B1 /* BigLetterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		2FF2C0161D3D281600E447B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FF2C0191D3D281600E447B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2FF2C01B1D3D281600E447B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FF2C0211D3D28B100E447B1 /* BigLetterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigLetterView.h; sourceTree = "<group>"; };
+		2FF2C0221D3D28B100E447B1 /* BigLetterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigLetterView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,8 @@
 			children = (
 				2FF2C0101D3D281600E447B1 /* AppDelegate.h */,
 				2FF2C0111D3D281600E447B1 /* AppDelegate.m */,
+				2FF2C0211D3D28B100E447B1 /* BigLetterView.h */,
+				2FF2C0221D3D28B100E447B1 /* BigLetterView.m */,
 				2FF2C0161D3D281600E447B1 /* Assets.xcassets */,
 				2FF2C0181D3D281600E447B1 /* MainMenu.xib */,
 				2FF2C01B1D3D281600E447B1 /* Info.plist */,
@@ -141,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FF2C0151D3D281600E447B1 /* main.m in Sources */,
+				2FF2C0231D3D28B100E447B1 /* BigLetterView.m in Sources */,
 				2FF2C0121D3D281600E447B1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +289,7 @@
 				2FF2C0201D3D281600E447B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
