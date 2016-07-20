@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:TypeTutor/TypeTutor.xcodeproj">
+      location = "group:Quiz/Quiz.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:iPing/iPing.xcodeproj">
@@ -53,6 +53,9 @@
       location = "group:RandomItems/RandomItems.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Quiz/Quiz.xcodeproj">
+      location = "group:DrawingFun/DrawingFun.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TypeTutor/TypeTutor.xcodeproj">
    </FileRef>
 </Workspace>

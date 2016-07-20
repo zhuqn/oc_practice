@@ -16,6 +16,12 @@
     [bgColor set];
     [NSBezierPath fillRect:bounds];
     
+    [self drawStringCenteredIn:bounds];
+    
+    NSSize strSize = [string sizeWithAttributes:attributes];
+//    [shadow setShadowOffset:strSize];
+//    [shadow setShadowColor:[NSColor whiteColor]];
+    
     if (([[self window] firstResponder] == self)&&[NSGraphicsContext currentContextDrawingToScreen])
     {
         [NSGraphicsContext saveGraphicsState];
@@ -42,10 +48,33 @@
     self = [super initWithCoder:coder];
     if (self) {
         NSLog(@"initializing");
+        [self prepareAttributes];
         bgColor = [NSColor yellowColor];
         string = @"";
+        shadow = [[NSShadow alloc] init];
     }
     return self;
+}
+
+-(IBAction)savePDF:(id)sender{
+    __block NSSavePanel *panel = [NSSavePanel savePanel];
+    [panel setAllowedFileTypes:[NSArray arrayWithObjects:@"pdf", nil]];
+    
+    [panel beginSheetModalForWindow:[self window] completionHandler:^(NSInteger result) {
+        if (result == NSOKButton) {
+            NSRect r = [self bounds];
+            NSData *data = [self dataWithPDFInsideRect:r];
+            NSError *error;
+            BOOL successful = [data writeToURL:[panel URL]
+                                       options:0
+                                         error:&error];
+            if (!successful) {
+                NSAlert *a = [NSAlert alertWithError:error];
+                [a runModal];
+            }
+        }
+        panel = nil;
+    }];
 }
 
 - (BOOL)isOpaque{
@@ -111,7 +140,25 @@
     [self setNeedsDisplay:YES];
 }
 
-#pragma mark Accessors
+- (void)prepareAttributes{
+    NSFont *aFont = [NSFont userFontOfSize:75];
+    NSFontManager *fontManager = [NSFontManager sharedFontManager];
+    aFont = [fontManager convertFont:aFont toHaveTrait:NSBoldFontMask];
+    
+    attributes = [NSMutableDictionary dictionary];
+    [attributes setObject:aFont forKey:NSFontAttributeName];
+    [attributes setObject:[NSColor redColor] forKey:NSForegroundColorAttributeName];
+}
+
+- (void)drawStringCenteredIn:(NSRect)r{
+    NSSize strSize = [string sizeWithAttributes:attributes];
+    NSPoint strOrigin;
+    strOrigin.x = r.origin.x + (r.size.width - strSize.width)/2;
+    strOrigin.y = r.origin.y + (r.size.height - strSize.height)/2;
+    [string drawAtPoint:strOrigin withAttributes:attributes];
+}
+
+#pragma mark - Accessors
 - (void)setBgColor:(NSColor *)c{
     bgColor = c;
     [self setNeedsDisplay:YES];
@@ -124,6 +171,7 @@
 - (void)setString:(NSString *)c{
     string = c;
     NSLog(@"The string is now %@", string);
+    [self setNeedsDisplay:YES];
 }
 
 - (NSString *)string{

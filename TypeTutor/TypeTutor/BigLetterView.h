@@ -11,9 +11,17 @@
 @interface BigLetterView : NSView{
     NSColor *bgColor;
     NSString *string;
+    
+    BOOL bold;
+    BOOL italic;
+    
     BOOL isHighlighted;
+    NSMutableDictionary *attributes;
+    NSShadow *shadow;
 }
 @property (strong)NSColor *bgColor;
 @property (copy)NSString *string;
+
+- (void)prepareAttributes;
 
 @end
