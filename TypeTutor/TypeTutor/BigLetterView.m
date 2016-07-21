@@ -158,6 +158,45 @@
     [string drawAtPoint:strOrigin withAttributes:attributes];
 }
 
+- (void)writeToPasteboard:(NSPasteboard *)pb{
+    //复制数据到剪切板
+    [pb clearContents];
+    [pb writeObjects:[NSArray arrayWithObject:string]];
+}
+
+- (BOOL)readFromPasteboard:(NSPasteboard *)pb{
+    NSArray *classes = [NSArray arrayWithObject:[NSString class]];
+    NSArray *objects = [pb readObjectsForClasses:classes options:nil];
+    
+    if ([objects count]>0) {
+        //从剪切板中读取数据
+        NSString *value = [objects objectAtIndex:0];
+        //视图只能处理一个字符
+        if ([value length]==1) {
+            [self setString:value];
+            return YES;
+        }
+    }
+    return NO;
+}
+
+-(IBAction)cut:(id)sender{
+    [self copy:sender];
+    [self setString:@""];
+}
+
+-(IBAction)copy:(id)sender{
+    NSPasteboard *pb = [NSPasteboard generalPasteboard];
+    [self writeToPasteboard:pb];
+}
+
+-(IBAction)paste:(id)sender{
+    NSPasteboard *pb = [NSPasteboard generalPasteboard];
+    if (![self readFromPasteboard:pb]) {
+        NSBeep();
+    }
+}
+
 #pragma mark - Accessors
 - (void)setBgColor:(NSColor *)c{
     bgColor = c;
