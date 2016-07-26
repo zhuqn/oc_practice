@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="16A254g" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
@@ -670,20 +670,14 @@
         <window title="TypeTutor" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="441" y="214" width="480" height="360"/>
+            <rect key="contentRect" x="441" y="214" width="936" height="355"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="936" height="355"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <customView ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="okZ-YX-Kxr" customClass="BigLetterView">
-                        <rect key="frame" x="20" y="53" width="440" height="287"/>
-                        <connections>
-                            <outlet property="nextKeyView" destination="PaE-dc-QDo" id="cTG-5L-iKv"/>
-                        </connections>
-                    </customView>
-                    <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PaE-dc-QDo">
-                        <rect key="frame" x="20" y="20" width="96" height="22"/>
+                    <textField verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PaE-dc-QDo">
+                        <rect key="frame" x="20" y="15" width="96" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="B13-ja-a8W">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -694,42 +688,58 @@
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gyO-Lg-Lyy">
-                        <rect key="frame" x="364" y="20" width="96" height="22"/>
+                        <rect key="frame" x="364" y="15" width="96" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Rd4-KT-HXi">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <outlet property="nextKeyView" destination="okZ-YX-Kxr" id="ghx-q3-HPx"/>
+                            <outlet property="nextKeyView" destination="okZ-YX-Kxr" id="qyd-Ht-tBk"/>
                         </connections>
                     </textField>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fMP-Jf-k9Z">
-                        <rect key="frame" x="172" y="18" width="49" height="18"/>
+                        <rect key="frame" x="172" y="13" width="49" height="18"/>
                         <buttonCell key="cell" type="check" title="bold" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="FgJ-Xp-eg4">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0L-DT-szf">
-                        <rect key="frame" x="253" y="18" width="51" height="18"/>
+                        <rect key="frame" x="253" y="13" width="51" height="18"/>
                         <buttonCell key="cell" type="check" title="italic" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="4HR-2Y-NiU">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
+                    <customView ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jR0-s6-Pi0" customClass="BigLetterView">
+                        <rect key="frame" x="476" y="48" width="440" height="287"/>
+                        <connections>
+                            <outlet property="nextKeyView" destination="PaE-dc-QDo" id="9ra-X3-fu2"/>
+                        </connections>
+                    </customView>
+                    <customView ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="okZ-YX-Kxr" customClass="BigLetterView">
+                        <rect key="frame" x="20" y="48" width="440" height="287"/>
+                        <connections>
+                            <outlet property="nextKeyView" destination="jR0-s6-Pi0" id="A5Z-Ea-fok"/>
+                        </connections>
+                    </customView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="PaE-dc-QDo" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="1mu-ib-bYx"/>
                     <constraint firstAttribute="trailing" secondItem="gyO-Lg-Lyy" secondAttribute="trailing" constant="20" id="L5R-B1-g2b"/>
-                    <constraint firstAttribute="trailing" secondItem="okZ-YX-Kxr" secondAttribute="trailing" constant="20" id="MX0-1V-LxE"/>
+                    <constraint firstItem="jR0-s6-Pi0" firstAttribute="leading" secondItem="okZ-YX-Kxr" secondAttribute="trailing" constant="16" id="RPG-QI-Xyr"/>
+                    <constraint firstItem="jR0-s6-Pi0" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="fsp-Lt-KDv"/>
                     <constraint firstItem="okZ-YX-Kxr" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="fts-7D-zgb"/>
+                    <constraint firstAttribute="trailing" secondItem="jR0-s6-Pi0" secondAttribute="trailing" constant="20" id="tqj-my-kb7"/>
+                    <constraint firstItem="jR0-s6-Pi0" firstAttribute="leading" secondItem="okZ-YX-Kxr" secondAttribute="trailing" constant="16" id="u5w-00-pIJ"/>
                     <constraint firstItem="okZ-YX-Kxr" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="vSj-OG-SRK"/>
                 </constraints>
             </view>
             <connections>
                 <outlet property="initialFirstResponder" destination="okZ-YX-Kxr" id="qwu-Rh-JU7"/>
             </connections>
+            <point key="canvasLocation" x="367" y="155.5"/>
         </window>
     </objects>
 </document>

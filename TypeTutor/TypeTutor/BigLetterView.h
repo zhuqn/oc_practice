@@ -18,6 +18,9 @@
     BOOL isHighlighted;
     NSMutableDictionary *attributes;
     NSShadow *shadow;
+    
+    NSEvent *mouseDownEvent;
+    BOOL highlighted;
 }
 @property (strong)NSColor *bgColor;
 @property (copy)NSString *string;

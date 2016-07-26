@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FBE97F61D465A7900D3B280 /* NSString+FirstLetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE97F51D465A7900D3B280 /* NSString+FirstLetter.m */; };
 		2FF2C0121D3D281600E447B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF2C0111D3D281600E447B1 /* AppDelegate.m */; };
 		2FF2C0151D3D281600E447B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF2C0141D3D281600E447B1 /* main.m */; };
 		2FF2C0171D3D281600E447B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2C0161D3D281600E447B1 /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FBE97F41D465A7900D3B280 /* NSString+FirstLetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FirstLetter.h"; sourceTree = "<group>"; };
+		2FBE97F51D465A7900D3B280 /* NSString+FirstLetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FirstLetter.m"; sourceTree = "<group>"; };
 		2FF2C00D1D3D281600E447B1 /* TypeTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypeTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF2C0101D3D281600E447B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2FF2C0111D3D281600E447B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,6 +63,8 @@
 				2FF2C0111D3D281600E447B1 /* AppDelegate.m */,
 				2FF2C0211D3D28B100E447B1 /* BigLetterView.h */,
 				2FF2C0221D3D28B100E447B1 /* BigLetterView.m */,
+				2FBE97F41D465A7900D3B280 /* NSString+FirstLetter.h */,
+				2FBE97F51D465A7900D3B280 /* NSString+FirstLetter.m */,
 				2FF2C0161D3D281600E447B1 /* Assets.xcassets */,
 				2FF2C0181D3D281600E447B1 /* MainMenu.xib */,
 				2FF2C01B1D3D281600E447B1 /* Info.plist */,
@@ -145,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FBE97F61D465A7900D3B280 /* NSString+FirstLetter.m in Sources */,
 				2FF2C0151D3D281600E447B1 /* main.m in Sources */,
 				2FF2C0231D3D28B100E447B1 /* BigLetterView.m in Sources */,
 				2FF2C0121D3D281600E447B1 /* AppDelegate.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "BigLetterView.h"
+#import "NSString+FirstLetter.h"
 
 @implementation BigLetterView
 
@@ -15,6 +16,16 @@
     NSRect bounds = [self bounds];
     [bgColor set];
     [NSBezierPath fillRect:bounds];
+    
+    if (highlighted) {
+        NSGradient *gr;
+        gr = [[NSGradient alloc] initWithStartingColor:[NSColor whiteColor] endingColor:bgColor];
+        [gr drawInRect:bounds relativeCenterPosition:NSZeroPoint];
+    }
+    else{
+        [bgColor set];
+        [NSBezierPath fillRect:bounds];
+    }
     
     [self drawStringCenteredIn:bounds];
     
@@ -52,6 +63,8 @@
         bgColor = [NSColor yellowColor];
         string = @"";
         shadow = [[NSShadow alloc] init];
+        
+        [self registerForDraggedTypes:[NSArray arrayWithObject:NSPasteboardTypeString]];
     }
     return self;
 }
@@ -75,6 +88,69 @@
         }
         panel = nil;
     }];
+}
+
+- (NSDragOperation)draggingSourceOperationMaskForLocal:(BOOL)flag{
+    return NSDragOperationCopy|NSDragOperationDelete;
+}
+
+-(void)draggedImage:(NSImage *)image endedAt:(NSPoint)screenPoint operation:(NSDragOperation)operation{
+    if (operation == NSDragOperationDelete) {
+        [self setString:@""];
+    }
+}
+
+-(void)mouseDown:(NSEvent *)theEvent{
+    mouseDownEvent = theEvent;
+}
+
+-(void)mouseDragged:(NSEvent *)theEvent{
+    NSPoint down = [mouseDownEvent locationInWindow];
+    NSPoint drag = [theEvent locationInWindow];
+    float distance = hypotf(down.x - drag.x, down.y-drag.y);
+    if (distance<3) {
+        return;
+    }
+    
+    if ([string length]==0) {
+        return;
+    }
+    
+    NSSize s = [string sizeWithAttributes:attributes];
+    
+    //创建需要拖拽操作的图片
+    NSImage *anImage = [[NSImage alloc] initWithSize:s];
+    
+    //在将要绘制字符的图片上创建一个矩形区域
+    NSRect imageBounds;
+    imageBounds.origin = NSZeroPoint;
+    imageBounds.size = s;
+    
+    //在图片上绘制字符
+    [anImage lockFocus];
+    [self drawStringCenteredIn:imageBounds];
+    [anImage unlockFocus];
+    
+    //获取mousedowe事件的位置
+    NSPoint p = [self convertPoint:down fromView:nil];
+    
+    //从图片中心开始拖动
+    p.x = p.x - s.width/2;
+    p.y = p.y - s.height/2;
+    
+    //获取剪切板
+    NSPasteboard *pb = [NSPasteboard pasteboardWithName:NSDragPboard];
+    //将字符放到剪切板上
+    [self writeToPasteboard:pb];
+    
+    //开始拖操作
+    [self dragImage:anImage
+                 at:p
+             offset:NSZeroSize
+              event:mouseDownEvent
+         pasteboard:pb
+             source:self
+          slideBack:YES];
 }
 
 - (BOOL)isOpaque{
@@ -171,11 +247,9 @@
     if ([objects count]>0) {
         //从剪切板中读取数据
         NSString *value = [objects objectAtIndex:0];
-        //视图只能处理一个字符
-        if ([value length]==1) {
-            [self setString:value];
-            return YES;
-        }
+
+        [self setString:[value bnr_firstLetter]];
+        return YES;
     }
     return NO;
 }
@@ -215,6 +289,52 @@
 
 - (NSString *)string{
     return string;
+}
+
+#pragma mark Dragging Destination
+- (NSDragOperation)draggingEntered:(id<NSDraggingInfo>)sender{
+    NSLog(@"draggingEntered:");
+    if ([sender draggingSource] == self) {
+        return NSDragOperationNone;
+    }
+    
+    highlighted = YES;
+    [self setNeedsDisplay:YES];
+    return NSDragOperationCopy;
+}
+
+- (void)draggingExited:(id<NSDraggingInfo>)sender{
+    NSLog(@"draggingExited");
+    highlighted = NO;
+    [self setNeedsDisplay:YES];
+}
+
+- (BOOL)prepareForDragOperation:(id<NSDraggingInfo>)sender{
+    return YES;
+}
+
+- (BOOL)performDragOperation:(id<NSDraggingInfo>)sender{
+    NSPasteboard *pb = [sender draggingPasteboard];
+    if (![self readFromPasteboard:pb]) {
+        NSLog(@"Error:Could not read from dragging pasteboard");
+        return NO;
+    }
+    return YES;
+}
+
+-(void)concludeDragOperation:(id<NSDraggingInfo>)sender{
+    NSLog(@"concludeDragOperation:");
+    highlighted = NO;
+    [self setNeedsDisplay:YES];
+}
+
+-(NSDragOperation)draggingUpdated:(id<NSDraggingInfo>)sender{
+    NSDragOperation op = [sender draggingSourceOperationMask];
+    NSLog(@"operation mask = %ld",op);
+    if ([sender draggingSource] == self) {
+        return NSDragOperationNone;
+    }
+    return NSDragOperationCopy;
 }
 
 @end
