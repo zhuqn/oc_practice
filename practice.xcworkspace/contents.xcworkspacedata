@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:QRCode_OC_MAC-master/QRCode_OC_MAC.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Quiz/Quiz.xcodeproj">
    </FileRef>
    <FileRef

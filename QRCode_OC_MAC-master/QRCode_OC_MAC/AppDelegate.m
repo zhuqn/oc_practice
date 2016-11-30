@@ -15,6 +15,9 @@
 
 @property (weak) IBOutlet NSWindow *window;
 
+@property (weak) IBOutlet NSButton *ios;
+@property (weak) IBOutlet NSButton *android;
+
 @end
 
 @implementation AppDelegate
@@ -29,25 +32,50 @@
     // Insert code here to tear down your application
 }
 
+- (IBAction)IOSclick:(id)sender {
+    [self.android setState:NSOffState];
+}
+- (IBAction)Androidclick:(id)sender {
+    [self.ios setState:NSOffState];
+}
+
 - (IBAction)creatQR:(id)sender {
     //生成版本背景图片
     [self doLoadImageData];
-    NSString *info = [[NSString alloc] initWithFormat:@"版本号为：%@\nURL地址为:%@\n已生成二维码请在桌面查看",self.ver_edit.stringValue,self.url_edit.stringValue];
+    NSString *name = nil;
+    if ([self.ios state] == NSOnState) {
+        name = @"IOS";
+    }
+    else
+    {
+        name = @"Android";
+    }
+    
+    NSString *info = [[NSString alloc] initWithFormat:@"%@\n版本号为：%@\nURL地址为:%@\n已生成二维码请在桌面查看",name,self.ver_edit.stringValue,self.url_edit.stringValue];
     NSBeginAlertSheet(@"提示", @"确认", @"取消", nil, [[NSApplication sharedApplication] keyWindow], nil, nil, nil, nil, info);
 }
 
 -(NSImage *)doLoadImageData
 {
-    float width = 400;
-    float height = 400;
+    float width = 500;
+    float height = 500;
     NSImage *finalImage = [[NSImage alloc] initWithSize:NSMakeSize(width, height)];
     
 //  obtain images - your sources may vary
     
-    NSImage *overImage = [NSImage imageNamed:@"IOS"];
+    NSImage *overImage = nil;
+    if ([self.ios state] == NSOnState) {
+        overImage = [NSImage imageNamed:@"IOS"];
+    }
+    else
+    {
+        overImage = [NSImage imageNamed:@"Android"];
+    }
+    
+    //Android
     
     NSString *url = self.url_edit.stringValue;
-    NSImage *mainImage = [QRCodeGenerator qrImageForString:url imageSize:200];//生成二维码
+    NSImage *mainImage = [QRCodeGenerator qrImageForString:url imageSize:500];//生成二维码
     
     [finalImage lockFocus];
     CGContextRef myContext = [[NSGraphicsContext currentContext] graphicsPort];
@@ -55,7 +83,7 @@
     [mainImage drawInRect:NSMakeRect(0, 0, width, height)  fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0 respectFlipped:YES hints:nil];
     
     // draw the overlay image at some offset point
-    [overImage drawInRect:NSMakeRect(150, 150, 100, 100)fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:0.5 respectFlipped:YES hints:nil];
+    [overImage drawInRect:NSMakeRect(182, 182, 136, 136)fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0 respectFlipped:YES hints:nil];
     
     [self CreatVersionPNG:myContext];
     
@@ -75,7 +103,7 @@
     CGContextSelectFont (myContext, "Helvetica-Bold",12,kCGEncodingMacRoman);
     CGContextSetTextDrawingMode (myContext, kCGTextFill);
     
-    CGContextSetRGBFillColor (myContext,1,1,1,1);
+    CGContextSetRGBFillColor (myContext,0,0,0,1);
     
     NSString *version = [self.ver_edit stringValue];
     const char *ver_str = [version UTF8String];
@@ -88,7 +116,7 @@
                              nil];
     NSSize size = [version sizeWithAttributes:textAtt];
     
-    CGContextShowTextAtPoint (myContext,(400 - size.width)/2,165,ver_str,[version length]); // 10
+    CGContextShowTextAtPoint (myContext,(500 - size.width)/2,187,ver_str,[version length]); // 10
 }
 
 @end
