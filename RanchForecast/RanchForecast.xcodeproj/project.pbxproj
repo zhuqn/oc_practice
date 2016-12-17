@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FB761C91D6DF1E900760FCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB761C81D6DF1E900760FCB /* AppDelegate.m */; };
+		2FB761CC1D6DF1E900760FCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB761CB1D6DF1E900760FCB /* main.m */; };
+		2FB761CF1D6DF1E900760FCB /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB761CE1D6DF1E900760FCB /* Document.m */; };
+		2FB761D21D6DF1E900760FCB /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FB761D01D6DF1E900760FCB /* Document.xib */; };
+		2FB761D51D6DF1E900760FCB /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2FB761D31D6DF1E900760FCB /* Document.xcdatamodeld */; };
+		2FB761D71D6DF1E900760FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FB761D61D6DF1E900760FCB /* Assets.xcassets */; };
+		2FB761DA1D6DF1E900760FCB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FB761D81D6DF1E900760FCB /* MainMenu.xib */; };
+		2FB761E51D6DF1E900760FCB /* RanchForecastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB761E41D6DF1E900760FCB /* RanchForecastTests.m */; };
+		2FB761F11D6DF25A00760FCB /* ScheduledClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB761F01D6DF25A00760FCB /* ScheduledClass.m */; };
+		2FB761F41D6DF46000760FCB /* ScheduleFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB761F31D6DF46000760FCB /* ScheduleFetcher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FB761E11D6DF1E900760FCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FB761BC1D6DF1E800760FCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FB761C31D6DF1E900760FCB;
+			remoteInfo = RanchForecast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FB761C41D6DF1E900760FCB /* RanchForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RanchForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FB761C71D6DF1E900760FCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2FB761C81D6DF1E900760FCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2FB761CB1D6DF1E900760FCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2FB761CD1D6DF1E900760FCB /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		2FB761CE1D6DF1E900760FCB /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		2FB761D11D6DF1E900760FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		2FB761D41D6DF1E900760FCB /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
+		2FB761D61D6DF1E900760FCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FB761D91D6DF1E900760FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2FB761DB1D6DF1E900760FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB761E01D6DF1E900760FCB /* RanchForecastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RanchForecastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FB761E41D6DF1E900760FCB /* RanchForecastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RanchForecastTests.m; sourceTree = "<group>"; };
+		2FB761E61D6DF1E900760FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB761EF1D6DF25A00760FCB /* ScheduledClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduledClass.h; sourceTree = "<group>"; };
+		2FB761F01D6DF25A00760FCB /* ScheduledClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduledClass.m; sourceTree = "<group>"; };
+		2FB761F21D6DF46000760FCB /* ScheduleFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleFetcher.h; sourceTree = "<group>"; };
+		2FB761F31D6DF46000760FCB /* ScheduleFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleFetcher.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FB761C11D6DF1E900760FCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FB761DD1D6DF1E900760FCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FB761BB1D6DF1E800760FCB = {
+			isa = PBXGroup;
+			children = (
+				2FB761C61D6DF1E900760FCB /* RanchForecast */,
+				2FB761E31D6DF1E900760FCB /* RanchForecastTests */,
+				2FB761C51D6DF1E900760FCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FB761C51D6DF1E900760FCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FB761C41D6DF1E900760FCB /* RanchForecast.app */,
+				2FB761E01D6DF1E900760FCB /* RanchForecastTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FB761C61D6DF1E900760FCB /* RanchForecast */ = {
+			isa = PBXGroup;
+			children = (
+				2FB761F21D6DF46000760FCB /* ScheduleFetcher.h */,
+				2FB761F31D6DF46000760FCB /* ScheduleFetcher.m */,
+				2FB761EF1D6DF25A00760FCB /* ScheduledClass.h */,
+				2FB761F01D6DF25A00760FCB /* ScheduledClass.m */,
+				2FB761C71D6DF1E900760FCB /* AppDelegate.h */,
+				2FB761C81D6DF1E900760FCB /* AppDelegate.m */,
+				2FB761CD1D6DF1E900760FCB /* Document.h */,
+				2FB761CE1D6DF1E900760FCB /* Document.m */,
+				2FB761D01D6DF1E900760FCB /* Document.xib */,
+				2FB761D61D6DF1E900760FCB /* Assets.xcassets */,
+				2FB761D81D6DF1E900760FCB /* MainMenu.xib */,
+				2FB761DB1D6DF1E900760FCB /* Info.plist */,
+				2FB761D31D6DF1E900760FCB /* Document.xcdatamodeld */,
+				2FB761CA1D6DF1E900760FCB /* Supporting Files */,
+			);
+			path = RanchForecast;
+			sourceTree = "<group>";
+		};
+		2FB761CA1D6DF1E900760FCB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FB761CB1D6DF1E900760FCB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FB761E31D6DF1E900760FCB /* RanchForecastTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FB761E41D6DF1E900760FCB /* RanchForecastTests.m */,
+				2FB761E61D6DF1E900760FCB /* Info.plist */,
+			);
+			path = RanchForecastTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FB761C31D6DF1E900760FCB /* RanchForecast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FB761E91D6DF1E900760FCB /* Build configuration list for PBXNativeTarget "RanchForecast" */;
+			buildPhases = (
+				2FB761C01D6DF1E900760FCB /* Sources */,
+				2FB761C11D6DF1E900760FCB /* Frameworks */,
+				2FB761C21D6DF1E900760FCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RanchForecast;
+			productName = RanchForecast;
+			productReference = 2FB761C41D6DF1E900760FCB /* RanchForecast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FB761DF1D6DF1E900760FCB /* RanchForecastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FB761EC1D6DF1E900760FCB /* Build configuration list for PBXNativeTarget "RanchForecastTests" */;
+			buildPhases = (
+				2FB761DC1D6DF1E900760FCB /* Sources */,
+				2FB761DD1D6DF1E900760FCB /* Frameworks */,
+				2FB761DE1D6DF1E900760FCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FB761E21D6DF1E900760FCB /* PBXTargetDependency */,
+			);
+			name = RanchForecastTests;
+			productName = RanchForecastTests;
+			productReference = 2FB761E01D6DF1E900760FCB /* RanchForecastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FB761BC1D6DF1E800760FCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = my.company;
+				TargetAttributes = {
+					2FB761C31D6DF1E900760FCB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					2FB761DF1D6DF1E900760FCB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2FB761C31D6DF1E900760FCB;
+					};
+				};
+			};
+			buildConfigurationList = 2FB761BF1D6DF1E800760FCB /* Build configuration list for PBXProject "RanchForecast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FB761BB1D6DF1E800760FCB;
+			productRefGroup = 2FB761C51D6DF1E900760FCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FB761C31D6DF1E900760FCB /* RanchForecast */,
+				2FB761DF1D6DF1E900760FCB /* RanchForecastTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FB761C21D6DF1E900760FCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB761D71D6DF1E900760FCB /* Assets.xcassets in Resources */,
+				2FB761D21D6DF1E900760FCB /* Document.xib in Resources */,
+				2FB761DA1D6DF1E900760FCB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FB761DE1D6DF1E900760FCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FB761C01D6DF1E900760FCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB761D51D6DF1E900760FCB /* Document.xcdatamodeld in Sources */,
+				2FB761F11D6DF25A00760FCB /* ScheduledClass.m in Sources */,
+				2FB761F41D6DF46000760FCB /* ScheduleFetcher.m in Sources */,
+				2FB761CF1D6DF1E900760FCB /* Document.m in Sources */,
+				2FB761CC1D6DF1E900760FCB /* main.m in Sources */,
+				2FB761C91D6DF1E900760FCB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FB761DC1D6DF1E900760FCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB761E51D6DF1E900760FCB /* RanchForecastTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FB761E21D6DF1E900760FCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FB761C31D6DF1E900760FCB /* RanchForecast */;
+			targetProxy = 2FB761E11D6DF1E900760FCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2FB761D01D6DF1E900760FCB /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FB761D11D6DF1E900760FCB /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		2FB761D81D6DF1E900760FCB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FB761D91D6DF1E900760FCB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FB761E71D6DF1E900760FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2FB761E81D6DF1E900760FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2FB761EA1D6DF1E900760FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RanchForecast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = youku.RanchForecast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2FB761EB1D6DF1E900760FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RanchForecast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = youku.RanchForecast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2FB761ED1D6DF1E900760FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RanchForecastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = youku.RanchForecastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RanchForecast.app/Contents/MacOS/RanchForecast";
+			};
+			name = Debug;
+		};
+		2FB761EE1D6DF1E900760FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RanchForecastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = youku.RanchForecastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RanchForecast.app/Contents/MacOS/RanchForecast";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FB761BF1D6DF1E800760FCB /* Build configuration list for PBXProject "RanchForecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FB761E71D6DF1E900760FCB /* Debug */,
+				2FB761E81D6DF1E900760FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FB761E91D6DF1E900760FCB /* Build configuration list for PBXNativeTarget "RanchForecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FB761EA1D6DF1E900760FCB /* Debug */,
+				2FB761EB1D6DF1E900760FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2FB761EC1D6DF1E900760FCB /* Build configuration list for PBXNativeTarget "RanchForecastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FB761ED1D6DF1E900760FCB /* Debug */,
+				2FB761EE1D6DF1E900760FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2FB761D31D6DF1E900760FCB /* Document.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2FB761D41D6DF1E900760FCB /* Document.xcdatamodel */,
+			);
+			currentVersion = 2FB761D41D6DF1E900760FCB /* Document.xcdatamodel */;
+			path = Document.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2FB761BC1D6DF1E800760FCB /* Project object */;
+}
